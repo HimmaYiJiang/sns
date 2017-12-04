@@ -11,16 +11,19 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
 </head>
 <body>
 <div id="app" class="{{ route_class() }}-page">
+
     @include('layouts._header')
-    <div class="container">
-        @yield('content')
-    </div>
+
+    @yield('content')
+
     @include('layouts._footer')
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+@yield('js')
 </body>
 </html>
