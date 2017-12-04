@@ -1,0 +1,18 @@
+/* universal */
+
+body {
+    font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+html {
+    position: relative;
+    min-height: 100% ;
+}
+
+
+/* header */
+@import "header";
+/* footer */
+@import "footer";
