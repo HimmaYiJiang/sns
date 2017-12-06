@@ -20,7 +20,9 @@ class TopicRequest extends Request
             case 'PATCH':
             {
                 return [
-                    // UPDATE ROLES
+                    'title'       => 'required|min:2',
+                    'body'        => 'required|min:3',
+                    'category_id' => 'required|numeric',
                 ];
             }
             case 'GET':
@@ -32,6 +34,13 @@ class TopicRequest extends Request
         }
     }
 
+    public function attributes()
+    {
+        return [
+          'title' => '标题',
+          'body' => '文章',
+        ];
+    }
     public function messages()
     {
         return [
