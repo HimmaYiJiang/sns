@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>@yield('title', 'Laravel') - 社区</title>
+    <meta name="description" content="@yield('description', 'Laravel 爱好者社区')" />
 
-    <title>@yield('title', 'SNS') - SNS</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
