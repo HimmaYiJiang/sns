@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Observers\TopicObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         \Carbon\Carbon::setLocale('zh');
+        \App\Models\Topic::observe(TopicObserver::class);
     }
 
     /**
