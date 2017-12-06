@@ -6,7 +6,7 @@ use App\Handlers\ImageUploadHandler;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Http\Requests\UserRequest;
-
+use App\Models\Topic;
 /**
  * Class UsersController
  * @package App\Http\Controllers
